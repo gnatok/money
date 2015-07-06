@@ -1132,9 +1132,9 @@ class Currency
      * @param  string $currencyCode
      * @throws \SebastianBergmann\Money\InvalidArgumentException
      */
-    public function __construct($currencyCode)
+    public function __construct ($currencyCode)
     {
-        if (!isset(self::$currencies[$currencyCode])) {
+        if(!isset(self::$currencies[$currencyCode])) {
             $currencyCode = strtoupper($currencyCode);
         }
 
